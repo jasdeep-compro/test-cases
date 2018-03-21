@@ -95,8 +95,6 @@ export function testUpdateJSONForPartialData(){
 
             JSONManipulator.updateJSONForPartialData(sheet["columns"],sheetRowColCount.col, sheetDisplayRangeObj.startCol, sheetDisplayRangeObj.endCol);
 
-            console.log(sheet);
-
             expect(sheet.columns["0"].visible).to.equal(false);
             expect(sheet.columns["1"].visible).to.equal(true);
             expect(sheet.columns["2"].visible).to.equal(true);

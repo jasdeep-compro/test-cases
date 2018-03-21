@@ -61,19 +61,4 @@ describe('sample test-1', function () {
         let sheetCount = await page.$eval(".k-tabstrip-items", el => (el ? el.children.length : false));
         expect(sheetCount).to.eql(3);
     });
-
-    //it('add sheet- API', async function () {
-    //
-    //    let sheetCount = await page.$eval(".k-tabstrip-items", el => (el ? el.children.length : false));
-    //
-    //    expect(sheetCount).to.eql(3);
-    //
-    //    await page.evaluate(() => abc.insertSheet());
-    //
-    //    sheetCount = await page.$eval(".k-tabstrip-items", el => (el ? el.children.length : false));
-    //    expect(sheetCount).to.eql(4);
-    //
-    //});
-
-
 });

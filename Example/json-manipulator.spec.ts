@@ -65,12 +65,6 @@ describe('Json Manipulator Test Correct Data', function() {
 });
 
 describe('Json Manipulator Test Get Item Config', function() {
-    afterEach(function(){
-
-        if (this.currentTest.state == 'failed'){
-            internalTest.testRemovePreferencesFromGrid();
-        }
-    });
 
     it('Should give Item Config',function(){
 
@@ -105,11 +99,5 @@ describe('Json Manipulator Test Get User Data', function() {
         let expectedOutput = inputJson["input_widget_data"].grid;
 
         expect(expectedOutput).to.equal(actual);
-    });
-});
-
-describe('Json Manipulator Test Create FeedBack Config', function() {
-
-    it('Should create Feedback Config',function(){
     });
 });
